@@ -1,0 +1,58 @@
+/* HEADER */
+.header__container{
+    display: flex;
+    align-items: center;
+}
+.header__name{
+    padding-right: 80px;
+}
+.header__log-in {
+    display: flex;
+}
+.log-in__text {
+    padding-left: 12px;
+}
+.text-login__link {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: 1px solid #000000;
+    text-decoration: underline;
+}
+.lodo-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+
+/* HEADER mobile*/
+@media screen and (max-width: 600px){
+    .header__container{
+        margin-top: 6%;
+    }
+    .text-login__link{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        padding-bottom: 4px;
+    }
+    .logo__cube {
+        max-width: 52px;
+        max-height: 53px;
+    }
+    .logo-name__notab {
+        max-width: 47px;
+        max-height: 12px;
+    }
+    .log-in__icon{
+        display: none;
+    }
+    .header__container{
+        justify-content: space-between;
+    }
+    .header__name{
+        padding-right: 0px;
+    }
+}

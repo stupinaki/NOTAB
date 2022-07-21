@@ -1,0 +1,51 @@
+/* MAIN main__download-last*/
+.download-last__text{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    
+    letter-spacing: 0.03em;
+
+    padding: 40px 0 26px 0;
+
+    display: block;
+    text-align: center;
+}
+.download-last__buttons{
+    display: block;
+    text-align: center;
+}
+.buttons-download-last__app-store {
+    margin-right: 40px;
+}
+.app-store-last__img {
+    min-width: 259px;
+}
+.google-play-last__img {
+    min-width: 292px;
+}
+
+/*main__download mobile*/
+@media screen and (max-width: 600px){
+    .google-play-last__img,
+    .app-store-last__img{
+        min-width: 185px;
+        min-height: 60px;
+    }
+}
+@media screen and (max-width: 487px) {
+    .download-last__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons-download-last__app-store {
+        margin-right: 0px;
+        margin-bottom: 12px;
+    }
+    .download-last__text {
+        padding: 40px 0;
+    }
+}

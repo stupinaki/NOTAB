@@ -1,0 +1,60 @@
+@media screen and (min-width: 501px){
+    .main__QR-code_mobile{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    /* .QR-code-mobile__wrapper{
+        position: relative;
+    } */
+    .QR-code-mobile_text-and-buttons-wrapper{
+        transform: translate(0px, -70px);
+    }
+    .QR-code-mobile__imgs{
+        transform: translate(0%, -10%);
+    }
+    .QR-code-mobile__background{
+        position: relative;
+    }
+    .background-mobile__gradient{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(180deg, black, transparent, black);
+    }
+    .QR-code-mobile__text{
+        padding-bottom: 40px;
+    }
+    .QR-code-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+    .QR-code-buttons__app-store{
+        margin-bottom: 16px;
+    }
+    .main__QR-code{
+        flex-direction: column;
+    }
+    .QR-code__imgs{
+    flex-direction: column;
+   }
+   .imgs-OR-code__phone1,
+   .imgs-OR-code__phone2{
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+   }
+   .imgs-OR-code__phone1{
+    margin: 0 0 40px 0;
+   }
+   .QR-code-buttons{
+    padding-bottom: 12px;
+   }
+}

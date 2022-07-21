@@ -1,0 +1,103 @@
+/* MAIN main__generate-QR-code*/
+.main__generate-QR-code{
+    padding: 120px 0;
+}
+.generate-QR-code__text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.text-generate-QR-code__sub-title{
+    max-width: 292px; 
+}
+.generate-QR-code__wrapper{
+    position: relative;
+}
+.background__gradient{
+    background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
+    opacity: 0.15;
+    filter: blur(312px);
+    border-radius: 476px;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+}
+.background__img{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+
+.generate-QR-code__phone-wrapper{
+    display: flex;
+}
+.phone-wrapper__blok{
+    width: 40%;
+}
+.phone-wrapper__img{
+    max-width: 100%;
+    min-width: 0;
+    z-index: 2;
+}
+
+.generate-QR-code__sign{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    display: flex;
+    align-items: flex-end;
+
+    position: absolute;
+    top: 42%;
+    left: 72%;
+}
+.arrow_generate-QR-code{
+    position: absolute;
+    top: 30%;
+    left: 67%;
+}
+
+/* MAIN main__generate-QR-code mobile*/
+@media screen and (max-width: 900px){
+    .generate-QR-code__text{
+        flex-direction: column;
+    }
+    .generate-QR-code__sign{ 
+        position: absolute;
+        top: 44%;
+        left: 76%;
+    }
+    .arrow_generate-QR-code{
+        position: absolute;
+        top: 30%;
+        left: 71%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main__generate-QR-code{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .generate-QR-code__sign{ 
+        position: absolute;
+        top: 110%;
+        left: 60%;
+
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .arrow_generate-QR-code{
+        position: absolute;
+        top: 88%;
+        left: 72%;
+        transform: rotate(28deg);
+    }
+}

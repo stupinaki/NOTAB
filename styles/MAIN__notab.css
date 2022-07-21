@@ -1,0 +1,41 @@
+/* MAIN main__notab notab*/
+.main__notab{
+    position: relative;
+}
+.notab__phone-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.notab__phone-wrapper2{
+    position: relative;
+}
+.phone-background_notab{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: -2;
+}
+.phone_notab{
+    max-width: 100%;
+}
+.display_notab{
+    position: absolute;
+    top: 16px;
+    bottom: 16px;
+    max-height: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/*main__notab mobile*/
+@media screen and (max-width: 600px){
+    .main__notab{
+        display: none;
+    }
+}

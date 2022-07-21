@@ -1,0 +1,99 @@
+/* MAIN main__tool*/
+.main__tool{
+    padding: 240px 0 360px 0;
+    display: flex;
+}
+.text-tool__title{
+    min-width: 497px;
+}
+.text-tool__sub-title{
+    max-width: 395px;
+}
+.img-tool__diagram1{
+    width: 40%;
+    transform: translate(172%, 854%);
+}
+.img-tool__diagram2{
+    width: 40%;
+    transform: translate(-48%, 288%);
+}
+.img-tool__diagram3{
+    width: 30%;
+    transform: translate(224%, 44%);
+}
+.img-tool__diagram4{
+    width: 30%;
+    transform: translate(-6%, 186%);
+}
+.img-tool__diagram5{
+    width: 30%;
+    transform: translate(-72%, 104%);
+}
+.img-tool__diagram6{
+    width: 30%;
+    transform: translate(8%, -72%);
+}
+.img-tool__diagram7{
+    width: 40%;
+    transform: translate(54%, -200%);
+}
+
+
+/*main__tool mobile*/
+@media screen and (max-width: 1000px){
+    .main__tool{
+        flex-direction: column;
+        padding: 80px 0 80px 0;
+    }
+    .img-tool__diagram1{
+        width: 60%;
+        transform: translate(69%, 540%);
+    }
+    .img-tool__diagram2{
+        width: 38%;
+        transform: translate(-154%, 214%);
+    }
+    .img-tool__diagram3{
+        transform: translate(239%, -42%);
+    }
+    .img-tool__diagram4{
+        transform: translate(-16%, 48%);
+    }
+    .img-tool__diagram5{
+        transform: translate(-57%, -60%);
+    }
+    .img-tool__diagram6{
+        display: none;
+    }
+    .img-tool__diagram7{
+        transform: translate(-24%, 10%);
+    }
+    .main__tool{
+        padding: 120px 0 160px 0;
+    }
+}
+@media screen and (max-width: 400px){
+    .img-tool__diagram1{
+        width: 100%;
+        transform: translate(42%, 350%);
+    }
+    .img-tool__diagram2{
+        transform: translate(-10%, -170%);
+    }
+    .img-tool__diagram3{
+        transform: translate(120%, -32%);
+    }
+    .img-tool__diagram4{
+        transform: translate(100%, -40%);
+    }
+    .img-tool__diagram5{
+        transform: translate(56%, -146%);
+    }
+
+    .img-tool__diagram7{
+        transform: translate(-52%, -66%);
+    }
+    .tool__text{
+        padding-bottom: 0px;
+    }
+}

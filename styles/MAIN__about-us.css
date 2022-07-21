@@ -1,0 +1,117 @@
+
+/* MAIN main__about-us*/
+.main__about-us{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 0 0;
+}
+.about-us__text{
+    margin-right: 24px;
+}
+.text-about__title{
+    padding-bottom: 80px;
+    max-width: 643px;
+    font-size: 64px;
+    line-height: 70px;
+    max-width: 700px;
+}
+.text-about__sub-title{
+    display: flex;
+}
+.sub-title-text-about__text {
+    max-width: 380px;
+    font-size: 20px;
+    line-height: 27px;
+}
+.sub-title-text-about__blurLine{
+    position: relative;
+}
+.blurLine__line{
+    position: absolute;
+    width: 140px;
+    height: 0px;
+    left: 0px;
+    top: 54px;
+    border: 4px solid #FFFFFF;
+    transform: rotate(117deg);
+}
+.blurLine__blur{
+    width: 125px;
+    height: 125px;
+    
+    background: rgba(96, 92, 234, 0.9);
+    filter: blur(100px);
+
+    border-radius: 50%;
+}
+.about-us__blur {
+    position: absolute;
+    min-width: 100%;
+    min-height: 74%;
+
+    left: -20%;
+    top: -27%;
+    background: rgba(250, 0, 255, 0.2);
+    filter: blur(90px);
+    transform: rotate(-43.26deg);
+    z-index: -2;
+}
+.about-us__img{
+    position: relative;
+    transform: translate(-3%, -14%);
+    min-width: 161px;
+}
+.phone_about-us {
+    max-width: 100%;
+}
+.display_about-us{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: scale(1.85) translate(0%, 7%);
+    z-index: -1;
+    max-width: 100%;
+}
+
+/* MAIN main__about-us mobile*/
+@media screen and (max-width: 920px){
+    .text-about__title{
+        font-size: 50px;
+        line-height: 65px;
+        padding-bottom: 32px;
+    }
+    .sub-title-text-about__text{
+        font-size: 20px;
+        line-height: 24px;    
+    }
+    .blurLine__line,
+    .blurLine__blur{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px){
+    .text-about__title{
+        font-size: 35px;
+        line-height: 40px;
+        padding-bottom: 32px;
+    }
+    .sub-title-text-about__text{
+        font-size: 16px;
+        line-height: 22px;    
+    }
+    .about-us__img{
+        transform: translate(50%, -10%);
+    }
+}
+@media screen and (max-width: 530px){
+    .about-us__img{
+        transform: translate(60%, 0%);
+    }
+}
+@media screen and (max-width: 510px){
+    .about-us__img{
+        transform: translate(40%, 0%);
+    }
+}

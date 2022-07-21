@@ -1,0 +1,40 @@
+/* MAIN main__QR-code-background*/
+.background-QR-code__hand,
+.background-QR-code__glass{
+    flex-grow: 1;
+}
+.main__QR-code-background{
+    display: flex;
+    position: relative;
+    min-width: 100%;
+}
+.background-QR-code__nigthlife{
+    position: absolute;
+    right: 5%;
+
+    transform: rotate(-13deg);
+    z-index: 2;
+}
+.nigthlife__img{
+    max-width: 100%;
+}
+.background-QR-code__gradient{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-image: linear-gradient(180deg, black, transparent, black);
+}
+
+@media screen and (max-width: 500px){
+    .main__QR-code-background{
+        display: none;
+    }    
+}
+@media screen and (max-width: 800px){
+    .nigthlife__img{
+        max-width: 70%;
+    } 
+}
